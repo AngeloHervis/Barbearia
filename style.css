@@ -15,76 +15,96 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    padding: 0 20px; /* Adicionando espaço nas laterais */
+    padding: 0 20px;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.5); /* Adicionando um fundo semi-transparente para melhor legibilidade */
-    text-align: center; /* Centralizando o conteúdo */
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
     padding: 20px 0;
 }
 
 a {
     color: #fff;
-    font-size: 18px; /* Reduzindo o tamanho da fonte para melhor adaptação em telas menores */
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    margin: 0 10px; /* Adicionando um espaço entre os links */
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Adicionando transição para a cor do texto */
+}
+
+a:hover {
+    color: #FBB034; /* Mudando a cor do texto ao passar o mouse */
 }
 
 .button-orange {
     background-color: #FBB034;
     color: #000;
     font-weight: bold;
-    height: 2.5rem; /* Reduzindo a altura do botão */
-    width: 8rem; /* Reduzindo a largura do botão */
+    height: 2.5rem;
+    width: 8rem;
     border: none;
     cursor: pointer;
-    margin-left: 10px; /* Adicionando um espaço entre o último link e o botão */
+    margin-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adicionando transições para a cor de fundo e o texto */
+}
+
+.button-orange:hover {
+    background-color: #000; /* Mudando a cor de fundo ao passar o mouse */
+    color: #FBB034; /* Mudando a cor do texto ao passar o mouse */
 }
 
 .wrapper {
     position: absolute;
-    top: 50%; /* Posicionando no centro vertical */
-    left: 50%; /* Posicionando no centro horizontal */
-    transform: translate(-50%, -50%); /* Centralizando horizontalmente e verticalmente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-    text-align: center; /* Centralizando o texto */
+    text-align: center;
     padding: 20px;
-    max-width: 400px; /* Limitando a largura máxima */
+    max-width: 400px;
 }
 
 h3 {
     color: #FBB034;
-    font-size: 1rem; /* Ajustando o tamanho da fonte */
+    font-size: 1rem;
     font-weight: 200;
 }
 
 h1 {
-    font-size: 2rem; /* Ajustando o tamanho da fonte */
+    font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 10px; /* Adicionando margem inferior */
 }
 
 p {
-    color: #9A9A9A;
-    font-size: 1rem; /* Ajustando o tamanho da fonte */
-    font-weight: 300;
+    color: #fff; /* Altera a cor do texto para branco */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    line-height: 1.6rem; /* Ajusta o espaçamento entre as linhas */
+    margin-bottom: 20px; /* Ajusta a margem inferior */
 }
 
+
 .button-orange2 {
-    margin-top: 2rem; /* Reduzindo a margem superior */
+    margin-top: 2rem;
 }
 
 .button-transparent {
-    height: 2.5rem; /* Reduzindo a altura do botão */
-    width: 8rem; /* Reduzindo a largura do botão */
+    height: 2.5rem;
+    width: 8rem;
     background-color: transparent;
-    border: 2px solid #fff; /* Definindo uma borda branca */
+    border: 2px solid #fff;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 1rem; /* Reduzindo a margem superior */
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adicionando transições para a cor de fundo e o texto */
+}
+
+.button-transparent:hover {
+    background-color: #fff; /* Mudando a cor de fundo ao passar o mouse */
+    color: #000; /* Mudando a cor do texto ao passar o mouse */
 }
 
 .mascara {
@@ -93,4 +113,44 @@ p {
     background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%, rgba(10,12,16,0.7) 50%, rgba(10,12,16,0.99) 85% );
     position: fixed ;
     top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Media queries específicas */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        padding: 20px; /* Ajuste o padding interno */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduza o tamanho da fonte do título */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduza o tamanho da fonte do parágrafo */
+        margin-bottom: 10px; /* Ajuste a margem inferior */
+    }
+
+    .button-orange,
+    .button-transparent {
+        width: 100%; /* Faça os botões ocuparem toda a largura disponível */
+        margin: 10px 0; /* Adicione margem superior e inferior aos botões */
+    }
+}
+
+/* Unidades de viewport */
+.wrapper {
+    width: 90%; /* Use porcentagem para a largura */
+    max-width: 1200px; /* Adicione um valor máximo para telas grandes */
+    margin: 0 auto; /* Centralize o conteúdo */
+}
+
+.title {
+    font-size: 2rem; /* Ajuste o tamanho da fonte */
 }
