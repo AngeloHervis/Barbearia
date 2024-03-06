@@ -1,84 +1,96 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-image: url(assets/barbearia.jpg);
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url('assets/barbearia.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    background-position: center;
+    position: relative;
+    padding: 0 20px; /* Adicionando espaço nas laterais */
 }
 
-header{
-    background: transparent;
-    text-align: right;
-    padding: 20px;
-    width: 96rem;
+header {
+    background: rgba(0, 0, 0, 0.5); /* Adicionando um fundo semi-transparente para melhor legibilidade */
+    text-align: center; /* Centralizando o conteúdo */
+    padding: 20px 0;
 }
 
-a{
+a {
     color: #fff;
-    font-size: 22px;
+    font-size: 18px; /* Reduzindo o tamanho da fonte para melhor adaptação em telas menores */
     font-weight: bold;
     cursor: pointer;
-    padding: 25px;
     text-decoration: none;
+    margin: 0 10px; /* Adicionando um espaço entre os links */
 }
 
 .button-orange {
     background-color: #FBB034;
     color: #000;
     font-weight: bold;
-    height: 2.8rem;
-    width: 8.5rem;
-    margin: 0 50px 0 25px;
+    height: 2.5rem; /* Reduzindo a altura do botão */
+    width: 8rem; /* Reduzindo a largura do botão */
     border: none;
     cursor: pointer;
+    margin-left: 10px; /* Adicionando um espaço entre o último link e o botão */
 }
 
-.wrapper{
+.wrapper {
     position: absolute;
-    margin-left: 5rem;
-    margin-top: 20rem;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
+    top: 50%; /* Posicionando no centro vertical */
+    left: 50%; /* Posicionando no centro horizontal */
+    transform: translate(-50%, -50%); /* Centralizando horizontalmente e verticalmente */
     color: #fff;
-    padding: 35px;
-    width: 33rem;
+    text-align: center; /* Centralizando o texto */
+    padding: 20px;
+    max-width: 400px; /* Limitando a largura máxima */
 }
 
 h3 {
     color: #FBB034;
-    font-size: 0.8rem;
+    font-size: 1rem; /* Ajustando o tamanho da fonte */
     font-weight: 200;
 }
 
-h1{
-    font-size: 3rem;
+h1 {
+    font-size: 2rem; /* Ajustando o tamanho da fonte */
     font-weight: 700;
 }
 
 p {
     color: #9A9A9A;
-    font-size: 1.25rem;
+    font-size: 1rem; /* Ajustando o tamanho da fonte */
     font-weight: 300;
-    width: 25rem;
 }
 
 .button-orange2 {
-    margin-top: 4rem;
-    margin-left: 1px;
+    margin-top: 2rem; /* Reduzindo a margem superior */
 }
 
-.button-transparent{
-    height: 2.8rem;
-    width: 8.5rem;
+.button-transparent {
+    height: 2.5rem; /* Reduzindo a altura do botão */
+    width: 8rem; /* Reduzindo a largura do botão */
     background-color: transparent;
-    border: 2px solid;
+    border: 2px solid #fff; /* Definindo uma borda branca */
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 1rem; /* Reduzindo a margem superior */
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%, rgba(10,12,16,0.7) 50%, rgba(10,12,16,0.99) 85% );
+    position: fixed ;
+    top: 0;
 }
