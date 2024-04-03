@@ -1,6 +1,6 @@
 # Landing Page da Barbearia
 
-![Barbearia](assets/barbearia.jpg)
+![Barbearia](assets/IMG_1859.jpeg)
 
 ## Descrição
 A Landing Page da Barbearia é uma página web moderna e elegante, desenvolvida para promover os serviços da barbearia e atrair clientes potenciais. Este projeto foi criado com o objetivo de fornecer uma presença online profissional e cativante para a Barbearia.
