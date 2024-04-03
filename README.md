@@ -1,6 +1,6 @@
 # Landing Page da Barbearia
 
-![Barbearia](img/barbearia.jpg)
+![Barbearia](assets/barbearia.jpg)
 
 ## Descrição
 A Landing Page da Barbearia é uma página web moderna e elegante, desenvolvida para promover os serviços da barbearia e atrair clientes potenciais. Este projeto foi criado com o objetivo de fornecer uma presença online profissional e cativante para a Barbearia.
@@ -17,13 +17,10 @@ A Landing Page da Barbearia é uma página web moderna e elegante, desenvolvida 
 
 ## Como Visualizar
 1. Clone o repositório (`git clone https://github.com/AngeloHervis/Barbearia.git`).
-2. Navegue até o diretório do projeto (`cd Landing-Page-Barbearia`).
+2. Navegue até o diretório do projeto
 3. Abra o arquivo `index.html` em seu navegador web.
 
 ## Autor
 Angelo Hervis
 - GitHub: [AngeloHervis](https://github.com/AngeloHervis)
 - LinkedIn: [Angelo Hervis](https://www.linkedin.com/in/angelo-hervis/)
-
-## Licença
-Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
